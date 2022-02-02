@@ -5,5 +5,9 @@ function fib(n) {
   } else if (n === 1) {
     return 1;
   }
-  return null;
+  return fib(n - 1) + fib(n -2);
+}
+const length = 40;
+for (let i = 0; i <= length; i++) {
+  console.log(fib(i));
 }
